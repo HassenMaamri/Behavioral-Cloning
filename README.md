@@ -58,6 +58,7 @@ The number of epochs the network trains for can be manually chosen and changed r
 ![alt text][image1]
 
 Below, is my model summary:
+
 ____________________________________________________________________________________________________
 Layer (type)                     Output Shape          Param #     Connected to                     
 ====================================================================================================
@@ -90,19 +91,3 @@ dense_4 (Dense)                  (None, 1)             11          dense_3[0][0]
 Total params: 348,219
 Trainable params: 348,219
 Non-trainable params: 0
-
-
-###Outputting Training and Validation Loss Metrics
-
-In Keras, the `model.fit()` and `model.fit_generator()` methods have a verbose parameter that tells Keras to output loss metrics as the model trains. The verbose parameter can optionally be set to `verbose = 1` or `verbose = 2`.
-
-Setting `model.fit(verbose = 1)` will
-
-output a progress bar in the terminal as the model trains.
-output the loss metric on the training set as the model trains.
-output the loss on the training and validation sets after each epoch.
-With `model.fit(verbose = 2)`, Keras will only output the loss on the training set and validation set after each epoch.
-
-Model History Object
-When calling `model.fit()` or `model.fit_generator()`, Keras outputs a history object that contains the training and validation loss for each epoch. Here is my example of how I used the history object to visualize the loss:
-
