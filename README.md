@@ -58,7 +58,7 @@ The number of epochs the network trains for can be manually chosen and changed r
 ![alt text][image1]
 
 Below, is my model summary:
-
+```sh
 ____________________________________________________________________________________________________
 Layer (type)                     Output Shape          Param #     Connected to                     
 ====================================================================================================
@@ -91,3 +91,4 @@ dense_4 (Dense)                  (None, 1)             11          dense_3[0][0]
 Total params: 348,219
 Trainable params: 348,219
 Non-trainable params: 0
+```
